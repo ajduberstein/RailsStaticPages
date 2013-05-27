@@ -1,13 +1,10 @@
-class PagesController < ApplicationController
-  def home
-    @title = "Home"
-  end
-
-  def about
-    @title = "About"
-  end
-
-  def contact
-    @title = "Contact"
-  end
-end
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
+    <%= cerf_meta_tag %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
